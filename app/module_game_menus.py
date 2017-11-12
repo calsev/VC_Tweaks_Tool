@@ -4706,7 +4706,7 @@ game_menus = [
       (else_try),
         (eq, "$g_prisoner_recruit_troop_id", 0),
         (store_current_hours, "$g_prisoner_recruit_last_time"),
-        (store_random_in_range, ":rand", 0, 100),
+        (store_random_in_range, ":rand", 0 + TWEAK_HIRE_PRISONERS_BASE_CHANCE, 100 + TWEAK_HIRE_PRISONERS_BASE_CHANCE),
         (store_skill_level, ":persuasion_level", "skl_persuasion", "trp_player"),
         (store_sub, ":reject_chance", 15, ":persuasion_level"),
         (val_mul, ":reject_chance", 6),
