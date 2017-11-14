@@ -4334,7 +4334,7 @@ simple_triggers = [
         (neq, "$fortified_camp", 1), #no when fortified ok
         (store_skill_level, ":leadership", "skl_leadership", "trp_player"),
         (val_mul, ":leadership", 5),
-        (store_sub, ":chance", 66, ":leadership"),
+        (store_sub, ":chance", TWEAK_HIRE_PRISONERS_ESCAPE_CHANCE, ":leadership"),
         (gt, ":chance", 0),
         (party_get_morale,":cur_morale","p_main_party"),#JuJu70
         (assign, ":num_escaped", 0),
