@@ -14879,6 +14879,7 @@ game_menus = [
         (val_min, ":mod", 5),
         (val_add, ":conv", ":mod"),
       (try_end),
+	  (val_clamp, ":conv", TWEAK_MIN_CONVERSION_FROM_FORCE_CONVERT_VILLAGE, 101),
       (try_begin),
         (gt, ":conv", 0),
         (try_begin),
