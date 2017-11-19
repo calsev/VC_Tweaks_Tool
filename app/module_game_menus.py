@@ -13978,7 +13978,7 @@ game_menus = [
               (try_end),
             (try_end),
           (try_end),
-          (ge, ":num_p", 10),
+          (ge, ":num_p", TWEAK_MIN_PRIESTS_TO_FORCE_CONVERT_VILLAGE),
           (party_get_slot, ":faith", "$current_town", slot_center_faithratio),
           (try_begin),
             (troop_slot_eq, "trp_player", slot_troop_religion, 1),#christian
