@@ -14892,7 +14892,7 @@ game_menus = [
         (try_end),
         (val_clamp, ":faith", 0, 101),
         (party_set_slot, "$current_town", slot_center_faithratio, ":faith"),
-        (val_mul, ":conv", -2),
+        (val_mul, ":conv", TWEAK_PROSPERITY_CHANGE_FROM_FORCE_CONVERT_VILLAGE),
         (call_script, "script_change_center_prosperity", "$current_town", ":conv"),
         (val_mul, ":conv", 5),
         (val_div, ":conv", 3),
