@@ -13990,7 +13990,7 @@ game_menus = [
             (lt, ":p_faith", 100),
             (store_relation,":rel","fac_pagans","fac_player_faction"),
           (try_end),
-          (gt, ":rel", 40),
+          (gt, ":rel", TWEAK_MIN_RELATION_TO_FORCE_CONVERT_VILLAGE),
           (troop_slot_ge, "trp_player", slot_troop_renown, 300),
         ],"Try to convert the peasants forcefully.",
         [
